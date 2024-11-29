@@ -51,6 +51,7 @@ ul {
 .greyBG {
     background-color: var(--extra-light);
     padding: 0;
+    gap: 0;
 }
 
 /* SPECIFIC STYLES */
@@ -66,6 +67,7 @@ header nav {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 999;
 }
 
 header nav ul {
@@ -167,4 +169,34 @@ main section.deliverables {
 
 .greyBG article div:first-of-type p {
     margin-left: 2rem;
+}
+
+main .critique {
+    text-align: center;
+}
+
+main .bigImg {
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+}
+
+main .bigImg img:nth-of-type(2) {
+    position: absolute;
+    width: 70%;
+    bottom: 50px;
+    right: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 8rem 0;
+    margin: 0 8vw;
+    border-top: 1px solid var(--light-gray);
+}
+
+footer div {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
