@@ -1,0 +1,170 @@
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter-VariableFont_opszwght.ttf);
+}
+
+:root {
+    --dark: #2B2C2E;
+    --light-gray: #848689;
+    --extra-light: #F1F1F4;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Inter";
+    font-size: 16px;
+    color: var(--dark);
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark);
+}
+
+ul {
+    list-style: none;
+}
+
+/* HELPER CLASSES */
+
+.btn {
+    font-size: 1rem;
+    padding: .5rem 3rem;
+    border-radius: 5px;
+    border: 1px solid var(--dark);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.greyBG {
+    background-color: var(--extra-light);
+    padding: 0;
+}
+
+/* SPECIFIC STYLES */
+/* HEADER */
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 7vw;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header nav ul {
+    display: flex;
+    font-size: 13px;
+}
+
+header nav ul li {
+    padding: 0 1vw;
+}
+
+header .title {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+
+
+/* MAIN */
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 3.5rem;
+}
+
+h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+main h1 {
+    font-weight: 300;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+main section:not(:nth-of-type(2)) p {
+    margin-bottom: 1rem;
+    color: var(--light-gray);
+}
+
+main {
+    padding: 0 8vw;
+}
+
+main section {
+    padding: 8rem 0;
+    gap: 4rem;
+}
+
+main section:nth-of-type(2) > p {
+    width: 85%;
+}
+
+main section:nth-of-type(2) article {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem;
+    width: 15%;
+}
+
+main section article .price {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+main section:nth-of-type(2) article p:nth-of-type(3) {
+    color: var(--light-gray);
+}
+
+main section.deliverables article {
+    width: 50%;
+    margin-left: auto;
+}
+
+main section.deliverables {
+    background-image: url(../img/home_deliverables.png);
+    background-size: 53%;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+}
+
+.greyBG article, .greyBG img {
+    width: 50%;
+}
+
+.greyBG h2 {
+    margin-bottom: 1rem;
+}
+
+.greyBG article {
+    padding: 3rem 4vw;
+}
+
+.greyBG article p:not(:last-of-type) {
+    margin-bottom: 0;
+}
+
+.greyBG article div:first-of-type p {
+    margin-left: 2rem;
+}
