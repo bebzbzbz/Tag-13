@@ -38,9 +38,16 @@ ul {
 
 .btn {
     font-size: 1rem;
+    font-weight: bold;
     padding: .5rem 3rem;
     border-radius: 5px;
     border: 1px solid var(--dark);
+    transition: background-color .3s ease, color .3s ease;
+}
+
+.btn:hover {
+    background-color: var(--dark);
+    color: var(--extra-light);
 }
 
 .flex {
@@ -119,6 +126,10 @@ main section {
     gap: 4rem;
 }
 
+main section.hero, main section.critique {
+    padding-bottom: 0;
+}
+
 main section:nth-of-type(2) > p {
     width: 85%;
 }
@@ -149,6 +160,7 @@ main section.deliverables {
     background-size: 53%;
     background-repeat: no-repeat;
     background-position: 0 50%;
+    margin-bottom: 8rem;
 }
 
 .greyBG article, .greyBG img {
@@ -171,7 +183,7 @@ main section.deliverables {
     margin-left: 2rem;
 }
 
-main .critique {
+main section.critique {
     text-align: center;
 }
 
@@ -179,6 +191,7 @@ main .bigImg {
     width: 70%;
     margin: 0 auto;
     position: relative;
+    margin-bottom: 4rem;
 }
 
 main .bigImg img:nth-of-type(2) {
@@ -188,9 +201,11 @@ main .bigImg img:nth-of-type(2) {
     right: 0;
 }
 
+/* FOOTER */
+
 footer {
     text-align: center;
-    padding: 8rem 0;
+    padding: 15vh 0 8vh;
     margin: 0 8vw;
     border-top: 1px solid var(--light-gray);
 }
@@ -199,4 +214,12 @@ footer div {
     display: flex;
     align-items: flex-end;
     justify-content: center;
+}
+
+footer p {
+    color: var(--light-gray);
+}
+
+footer img {
+    width: 100px; 
 }
